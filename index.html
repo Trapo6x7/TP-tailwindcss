@@ -27,97 +27,162 @@
       }
     </style>
   </head>
-  <body class="font-body">
-    <header class="flex justify-between px-10 py-12">
+
+  <body class="font-body font-paragraph bg-neutral-off-white lg:p-20">
+    <header
+      class="flex justify-between items-center pt-10 px-10 pb-12 lg:px-35 pb-20"
+    >
       <a href="" alt="">
         <img src="assets/images/logo.svg" alt="" />
       </a>
-      <img src="assets/images/icon-menu.svg" alt="" />
-      <nav class="hidden">
-        <a href="">Home</a>
-        <a href="">New</a>
-        <a href="">Popular</a>
-        <a href="">Treding</a>
-        <a href="">Categorie</a>
+      <img src="assets/images/icon-menu.svg" alt="" class="lg:hidden" />
+      <nav
+        class="hidden lg:block text-neutral-dark-grayish-blue tracking-wider justify-around"
+      >
+        <a href="" class="mx-3">Home</a>
+        <a href="" class="mx-3">New</a>
+        <a href="" class="mx-3">Popular</a>
+        <a href="" class="mx-3">Treding</a>
+        <a href="" class="mx-3">Categorie</a>
       </nav>
     </header>
 
-    <section class="flex px-10 flex-col">
-      <article>
+    <section class="px-10 lg:flex gap-5 px-35">
+      <article class="flex-col justify-between lg:w-[75%]">
         <div class="w-full">
-          <img src="assets/images/image-web-3-mobile.jpg" alt="image web 3" />
-        </div>
-        <div class="w-full my-10 flex flex-col">
-          <h1 class="font-extrabold text-7xl">The Bright Future of Web 3.0?</h1>
-          <p class="font-normal my-5 text-xl text-neutral-grayish-blue">
-            We dive into the next evolution of the web that<br />
-            claims to put the power of the platforms back<br />
-            into the hands of the people. But is it really<br />
-            fulfilling its promise?
-          </p>
-          <a
-            href=""
-            class="bg-primary-red px-4 py-3 w-3/6 text-neutral-off-white font-bold text-center tracking-[6px]"
-          >
-            READ MORE
-          </a>
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt="image web 3"
+            class="block md:hidden"
+          />
+          <img
+            src="assets/images/image-web-3-desktop.jpg"
+            alt="image web 3"
+            class="hidden md:block"
+          />
+
+          <div class="w-full mt-10 md:flex justify-around">
+            <h1
+              class="font-extrabold text-7xl w-full mb-5 md:w-1/2 lg:text-7xl w-2/6"
+            >
+              The Bright Future of Web 3.0?
+            </h1>
+            <div class="w-full mb-8 md:w-2/5 lg:text-md w-2/6">
+              <p class="font-normal text-xl tracking-wider mb-12 lg:text-md">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a
+                href=""
+                class="mb-8 bg-primary-red px-8 py-3 w-[55%] text-neutral-off-white font-bold text-center tracking-[0.2em]"
+              >
+                READ MORE
+              </a>
+            </div>
+          </div>
         </div>
       </article>
-      <div class="bg-neutral-very-dark-blue text-white p-6">
-        <h2 class="text-primary-orange font-bold text-3xl mb-8">New</h2>
-        <article class="my-6 text-lg">
-          <h3 class="font-bold my-3 text-xl">Hydrogen VS Electric Cars</h3>
-          <p class="text-neutral-grayish-blue">
-            Will hydrogen-fueled cars ever catch up to EVs?
-          </p>
-        </article>
-        <hr class="my-4" />
-        <article class="my-6 text-lg">
-          <h3 class="font-bold my-3 text-xl">The Downsides of AI Artistry</h3>
 
-          <p class="text-neutral-grayish-blue">
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </article>
-        <hr class="my-4" />
-        <article class="my-6 text-lg">
-          <h3 class="font-bold my- text-xl">Is VC Funding Drying Up?</h3>
-          <p class="text-neutral-grayish-blue">
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
-        </article>
-      </div>
+      <section
+        class="bg-neutral-very-dark-blue text-white p-6 lg:w-[25%] flexx flex-col h-auto"
+      >
+        <h2
+          class="text-primary-orange font-bold text-3xl mb-8 tracking-wider lg:mb-20"
+        >
+          New
+        </h2>
+        <div class="flex-col justify-between">
+          <article class="my-6 text-lg lg:mb-12">
+            <h3 class="font-bold my-3 text-xl tracking-wider">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p class="text-neutral-grayish-blue tracking-wider lg:text-lg">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          <hr class="my-4" />
+          <article class="my-6 text-lg lg:my-12">
+            <h3 class="font-bold my-3 text-xl tracking-wider">
+              The Downsides of AI Artistry
+            </h3>
+
+            <p class="text-neutral-grayish-blue tracking-wider lg:text-lg">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <hr class="my-4 lg:mb-12" />
+          <article class="mt-6">
+            <h3 class="font-bold my-3 text-xl tracking-wider">
+              Is VC Funding Drying Up?
+            </h3>
+            <p class="text-neutral-grayish-blue tracking-wider lg:text-lg">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </div>
+      </section>
     </section>
 
-    <section class="flex px-10 flex-col gap-10 my-10">
-      <article class="flex justify-between">
-        <img src="assets/images/image-retro-pcs.jpg" alt="" class="w-2/6">
-        <div class="w-3/5">
-          <h3 class="text-5xl font-semibold text-neutral-grayish-blue my-1">01</h3>
-          <h2 class="text-neutral-very-dark-blue font-bold">Reviving Retro PCs</h2>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </article>
+    <section class="flex px-10 flex-col mt-6">
+      <div class="gap-10 lg:flex h-3/4 justify-between">
+        <article class="flex gap-10 mb-10 lg:mt-20">
+          <img src="assets/images/image-retro-pcs.jpg" alt="" class="w-36 h-52" />
+          <div class="w-60">
+            <h3
+              class="text-5xl text-neutral-grayish-blue font-bold my-2 tracking-wider"
+            >
+              01
+            </h3>
+            <h2 class="text-neutral-very-dark-blue font-bold my-2">
+              Reviving Retro PCs
+            </h2>
+            <p class="my-2 tracking-wider">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
 
-      <article class="flex">
-        <img src="assets/images/image-top-laptops.jpg" alt="">
-        <div>
-          <h3>02</h3>
-          <h2>Top 10 Laptops of 2022</h2>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </article>
+        <article class="flex gap-10 justify-between mb-10 lg:mt-20">
+          <img src="assets/images/image-top-laptops.jpg" alt="" class="w-36 h-52" />
+          <div class="w-60">
+            <h3
+              class="text-5xl text-neutral-grayish-blue font-bold my-2 tracking-wider"
+            >
+              02
+            </h3>
+            <h2 class="text-neutral-very-dark-blue font-bold my-2">
+              Top 10 Laptops of 2022
+            </h2>
+            <p class="my-2 tracking-wider">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
 
-      <article class="flex">
-        <img src="assets/images/image-gaming-growth.jpg" alt="">
-        <div>
-          <h3>03</h3>
-          <h2>The Growth of Gaming</h2>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
-      </article>
+        <article class="flex gap-10 justify-between mb-10 lg:mt-20">
+          <img
+            src="assets/images/image-gaming-growth.jpg"
+            alt=""
+            class="w-36 h-52"
+          />
+          <div class="w-60 flex-col">
+            <h3
+              class="text-5xl text-neutral-grayish-blue font-bold my-2 tracking-wider"
+            >
+              03
+            </h3>
+            <h2 class="text-neutral-very-dark-blue font-bold my-2">
+              The Growth of Gaming
+            </h2>
+            <p class="my-2 tracking-wider">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <div class="attribution">
